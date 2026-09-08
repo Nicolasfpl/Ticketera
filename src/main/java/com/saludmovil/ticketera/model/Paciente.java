@@ -9,7 +9,6 @@ import lombok.NoArgsConstructor;
 @Builder 
 @NoArgsConstructor 
 @AllArgsConstructor 
-
 public class Paciente {
     private String rut;
     private String nombre;
