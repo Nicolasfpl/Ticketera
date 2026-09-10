@@ -8,21 +8,21 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Data 
-@Builder 
-@NoArgsConstructor 
-@AllArgsConstructor 
+@Data
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class SolicitudVisita {
 
     private String numeroTicket;
-    private Paciente paciente;
-    private LocalDate fechaVisita;
-    private HorarioVisita horario;
-    private List<String> examenes;
-    private EstadoSolicitud estado;
 
-    public String getNumeroTicket() {
-        throw new UnsupportedOperationException("Not supported yet.");
-    }
-    
-}
+    private Paciente paciente;
+
+    private LocalDate fechaVisita;
+
+    private HorarioVisita horario;
+
+    private List<String> examenes;
+
+    private EstadoSolicitud estado;
+}  
