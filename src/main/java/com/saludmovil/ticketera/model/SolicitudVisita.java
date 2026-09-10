@@ -14,11 +14,15 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor 
 public class SolicitudVisita {
 
-    private String numeroticket;
+    private String numeroTicket;
     private Paciente paciente;
-    private LocalDate FechaVisita;
-    private HorarioVisita Horario;
+    private LocalDate fechaVisita;
+    private HorarioVisita horario;
     private List<String> examenes;
     private EstadoSolicitud estado;
+
+    public String getNumeroTicket() {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
     
 }
